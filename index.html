@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D</title>
+    <link rel="stylesheet" href="Robot.css">
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+</head>
+<body>
+    <div class="demo">
+        <model-viewer id="model" class="robo" src="RobotExpressive.glb" auto-rotate camera-controls ar  
+        skybox-image="stadium_01_4k.hdr" animatio-name="Running" autoplay></model-viewer>
+    </div>
+    <div class="button-container">
+        <button type="button" onclick="stop()" >STOP</button>
+        <button type="button" onclick="run()">RUN</button>
+        <button type="button" onclick="wave()">WAVE</button>
+    </div>
+
+<!-- <script>
+        var modelViewer = document.getElementById('model')
+
+        function stop(){
+            modelViewer.animationName = 'none';
+        }
+        function run(){
+            modelViewer.animationName = 'Running';
+        }
+        function wave(){
+            modelViewer.animationName = 'WAVE';
+        }
+    </script> -->
+
+    <script src="robo.js"></script>
+
+</body>
+</html>
